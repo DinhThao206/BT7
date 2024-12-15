@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+      let a = 0;
+      let b = 1;
+      let count = 0;
+      let text = "0,1";
+      let sum = a + b;
+      while (count < 8) {
+        let c = a + b;
+        text += "," + c;
+        sum += c;
+        a = b;
+        b = c;
+        count++;
+      }
+      document.write(text +"<br>Tổng:" + sum);
+</script>
+
+</body>
+</html>
